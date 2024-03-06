@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  border-radius: 60px;
+  background-color: #E2CD9B;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: #35f575;
+  border-radius: 30px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top:-50px;
+  margin-left:-50px;
+}
