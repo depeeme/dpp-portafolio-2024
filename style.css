@@ -9,13 +9,18 @@ html {
 }
 
 ::selection {
-  background: #ffffff;
-  color: rgb(255, 255, 255);
+  background: #ff1414;
+  color: rgb(73, 209, 32);
+}
+
+::highlight {
+  background: #ff1414;
+  color: rgb(73, 209, 32);
 }
 
 body {
   border-radius: 25px;
-  background-color: #272727;
+  background-image: linear-gradient(green, yellow);
   display: flex;
   flex-direction: column;
 }
@@ -43,16 +48,16 @@ body {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  box-shadow: 0 0 200px ;
-  border-radius: 5px;
-  color: #9c4e4e;
+  box-shadow: 0 0 5px ;
+  border-radius: 15%;
+  color: #b89c00;
 }
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 15%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
@@ -60,23 +65,20 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #2b2b2b;
-  border-color: #9c4e4e;
+  background-color: #494949;
+  border-color: #000000;
   border-style: solid;
   border-width: 1px;
 }
 
 .card-text {
-  padding: 10px;
-  letter-spacing: -0.1pt;
-  line-height: 110%;
-  font-family: "Tangerine", cursive;
-  font-size: 21pt;
-  text-align: left;
-  color: #9c4e4e;
-  word-break: normal;
-  margin: 0;
-  word-spacing: 0.1px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-family:cursive;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
 }
 
 .info, a{
@@ -99,34 +101,35 @@ a:hover {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(36, 34, 34);
+  background-color: #ca1111;
   transform: rotateY(180deg);
-  border-color: #9c4e4e;
+  border-color: #1f0606;
   border-style: solid;
   border-width: 1px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 } 
 
 .decoration {
   height: 100%;
   position: fixed;
   right: 0;
-  fill: #9c4e4e;
+  fill: #000000;
+}
+
+.tex-inner-back-card {
+  color: #000000;
+  font-family:cursive;
+  font-size: 12px;
+  text-align: center;
+  margin: 3px;
 }
 
 .back-card-img {
-  margin: auto;
-}
-
-.ascii-art {
-  font-family: monospace;
-  color: #9c4e4e;
-  margin: auto;
-  font-weight: bold;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  object-fit: contain;
+  height: 90%;
+  border-radius: 30%;
+  margin: 5px;
+  margin-top: 0px;
 }
