@@ -131,7 +131,7 @@ a:hover {
 
 .document-scroll {
   display: flex;
-  flex-flow:column;
+  justify-content: center;
   overflow-y: scroll;
   scrollbar-width:thin;
   width: 100%;
@@ -139,16 +139,21 @@ a:hover {
   padding-top: 900px;
 }
 
+@media (min-width: px) {
+  .document-page {
+    flex: 100%;
+  }
+}
+
 .document-page {
-  height: 700px;
-  min-height: 700px;
-  width: 500px;
+  height: 500px;
+  width: 400px;
   margin: 20px;
   margin-bottom: 0px;
   padding: 10px;
-  background-color: #ca1111;
-  justify-self: center;
+  background-color: #feffe3;
   border-radius: 5%;
+  margin-top: 0px;
 }
 
 .document-text {
