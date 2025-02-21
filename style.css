@@ -6,6 +6,7 @@ html, body {
 
 html {
   background-color: rgb(0, 0, 0);
+  height: 100%;
 }
 
 ::selection {
@@ -18,6 +19,34 @@ body {
   background-image: linear-gradient(green, yellow);
   display: flex;
   flex-direction: column;
+}
+
+p {
+  font-family: cursive, 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 14px;
+  margin-top: 6px;
+}
+
+h2 {
+  font-family: cursive, 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 14px;
+  padding: 0px;
+  margin: 0px;
+  font-variant:small-caps
+}
+
+h3 {
+  font-family: cursive, 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 0px;
+  margin: 0px;
 }
 
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -115,8 +144,6 @@ a:hover {
 
 .tex-inner-back-card {
   color: #000000;
-  font-family:cursive;
-  font-size: 12px;
   text-align: center;
   margin: 3px;
 }
@@ -136,17 +163,11 @@ a:hover {
   scrollbar-width:thin;
   width: 100%;
   height: 100%;
-  padding-top: 900px;
-}
-
-@media (min-width: px) {
-  .document-page {
-    flex: 100%;
-  }
+  padding-top: 90vh;
 }
 
 .document-page {
-  height: 500px;
+  height: auto;
   width: 400px;
   margin: 20px;
   margin-bottom: 0px;
@@ -156,9 +177,19 @@ a:hover {
   margin-top: 0px;
 }
 
-.document-text {
-  font-family: cursive;
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
+.gallery {
+  display: flex;
+  flex-flow: row;
+
+  
+}
+
+.gallery img {
+  height: 100%;
+  width: 100px;
+  overflow: hidden;
+  padding: 2px;
+  margin-top: 10px;
+  border-radius: 10px;
+
 }
